@@ -4,6 +4,10 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "ts": "tsc -p .",
+    "start": "npm run ts && npm run start:server",
+    "start:server": "node index.js",
+    "dev": "tsc-watch -p tsconfig.json --onSuccess \"npm run start:server\"",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
