@@ -1,4 +1,5 @@
 import express from 'express';
+import { WebSocketServer, WebSocket } from 'ws';
 import configure from './routers';
 
 const app = express();
