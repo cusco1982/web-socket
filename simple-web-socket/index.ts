@@ -8,6 +8,6 @@ configure(app);
 
 console.log(`Attempting to run server on port ${port}`);
 
-app.listen(port, () => {
+const s = app.listen(port, () => {
     console.log(`Listening on port ${port}`);
 });
